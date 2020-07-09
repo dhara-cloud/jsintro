@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputbox</title>
+</head>
+<body>
+    
+    <input type="number" name="source" id="source" value="2">
+    <br>
+    <input type="number" name="souce2" id="source2" value="5">
+    <br>
+    <input type="number" name="result" id="result" value="0">
+    <script>
+       /*document.querySelector('#result').value =  
+            document.querySelector('#source').valueAsNumber + 
+             document.querySelector('#source2').valueAsNumber;*/
+      const changeListener = (event) => {
+        const valueAdded = document.querySelector('#result');
+        valueAdded.value = valueAdded.valueAsNumber + event.target.valueAsNumber;
+    
+     }
+
+        const inputOne = document.querySelector('#source');
+        inputOne.addEventListener('change',changeListener);
+
+
+    </script>
+</body>
+</html>
