@@ -12,17 +12,13 @@
     <br>
     <input type="number" name="result" id="result" value="0">
     <script>
-       /*document.querySelector('#result').value =  
-            document.querySelector('#source').valueAsNumber + 
-             document.querySelector('#source2').valueAsNumber;*/
-      const changeListener = (event) => {
+    const changeListener = (event) => {
         const valueAdded = document.querySelector('#result');
         valueAdded.value = valueAdded.valueAsNumber + event.target.valueAsNumber;
-    
-     }
+    }
 
-        const inputOne = document.querySelector('#source');
-        inputOne.addEventListener('change',changeListener);
+    const inputOne = document.querySelector('#source');
+    inputOne.addEventListener('change',changeListener);
 
 
     </script>
